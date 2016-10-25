@@ -8,7 +8,7 @@ var env = {
   AUTH0_CALLBACK_URL: process.env.AUTH0_CALLBACK_URL || 'http://localhost:3000/callback'
 };
 
-var entryPoint = 'http%3A%2F%2Fsp-samltest.dev';
+var entryPoint = 'http%3A%2F%2Fsp-samltest.dev%3A3000';
 var logoutUrl = process.env.AUTH0_LOGOUT_URL + '/returnTo=' + entryPoint;
 var federatedLogoutUrl = process.env.AUTH0_FEDERATED_LOGOUT_URL + '&returnTo=' + entryPoint;
 
