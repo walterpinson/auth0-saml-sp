@@ -24,7 +24,12 @@ router.get('/login',
 
 router.get('/logout', function(req, res){
   req.logout();
-  res.redirect('/');
+  res.redirect(logoutUrl);
+});
+
+router.get('/logoutFederated', function(req, res){
+  req.logout();
+  res.redirect(federatedLogoutUrl);
 });
 
 router.get('/callback',
