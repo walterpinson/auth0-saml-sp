@@ -9,7 +9,7 @@ var env = {
 };
 
 var entryPoint = 'http%3A%2F%2Fsp-samltest.dev%3A3000';
-var logoutUrl = process.env.AUTH0_LOGOUT_URL + '/returnTo=' + entryPoint;
+var logoutUrl = process.env.AUTH0_LOGOUT_URL + '?returnTo=' + entryPoint;
 var federatedLogoutUrl = process.env.AUTH0_FEDERATED_LOGOUT_URL + '&returnTo=' + entryPoint;
 
 /* GET home page. */
