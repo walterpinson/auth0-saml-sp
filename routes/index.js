@@ -14,7 +14,7 @@ var federatedLogoutUrl = process.env.AUTH0_FEDERATED_LOGOUT_URL + '&returnTo=' +
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express', env: env });
+  res.render('index', { title: 'SAML Test Application', env: env });
 });
 
 router.get('/login',
